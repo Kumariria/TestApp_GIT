@@ -10,4 +10,6 @@ app.listen(PORT, () => {
   console.log(`App is listening to the port ${PORT}`);
 });
 
-app;
+app.get("/", (req, res) => {
+  res.send("<h2> Hello Worlds</h2>");
+});
